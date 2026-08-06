@@ -23,6 +23,9 @@ body{
     color: rgb(236, 108, 61);
     letter-spacing: 1px;
 }
+.logo{
+    flex: 1;
+}
 /* Navigation Links */
 .nav-links {
     display: flex;
@@ -34,6 +37,7 @@ body{
 
 .nav-links li a {
     text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #333;
     font-size: 1rem;
     font-weight: 500;
@@ -42,6 +46,14 @@ body{
 
 .nav-links li a:hover {
     color: rgb(236, 108, 61);
+}
+
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 /* Main content */
@@ -62,21 +74,23 @@ body{
     color: #222;
 }
 
-.description span{
+/* .description span{
     color:rgb(236, 108, 61);
-}
+} */
 
 .description p:first-child {
     color: rgb(236, 108, 61);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+    /* font-family:fantasy; */
 }
 
 .description p {
     line-height: 1.8;
     color: #555;
     margin-bottom: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .image {
     flex: 1;
@@ -237,21 +251,49 @@ button:hover {
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        /* gap: 15px; */
         padding: 15px 5%;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
+        padding: 25px 0;
+        display: none;
     }
 
+    .logo{
+        flex: unset;
+    }
+    
     .logo a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #222;
+        font-size: 25px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2000;
+    }
+
+    /* When menu is active */
+    .nav-links.active {
+        display: flex;
+    }
+    
     .hero {
         flex-direction: column;
         text-align: center;
