@@ -1,5 +1,5 @@
 body{
-    background-color: #fafafa;
+    background-color: #fafafae1;
 }
 /* navbar */
 .navbar {
@@ -7,7 +7,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 18px 8%;
-    background-color: #ffffff;
+    background-color: #ffffffee;
     border-radius: 10px;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
     position: sticky;
@@ -20,7 +20,7 @@ body{
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    color: #2c2c2c;
+    color: rgb(236, 108, 61);
     letter-spacing: 1px;
 }
 /* Navigation Links */
@@ -112,6 +112,113 @@ body{
     color: white;
 }
 
+
+/* Contact page */
+.contact-section {
+    display: flex;
+    gap: 40px;
+    padding: 80px 8%;
+    align-items: stretch;
+}
+
+/* FORM SIDE */
+.form {
+    flex: 1;
+    background-image: url("images/tiles-contact.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 40px;
+    height: 100%;
+    color: white;
+}
+
+.title p {
+    color: rgb(236, 108, 61);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+.title h2 {
+    font-size: 26px;;
+    margin: 10px 0;
+}
+
+.contact-hr {
+    width: 80px;
+    margin-left: 0;
+    border: 2px solid rgb(236, 108, 61);
+}
+
+/* NAME + EMAIL SIDE BY SIDE */
+.form-row {
+    display: flex;
+    gap: 32px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.input-group #subject{
+    color: #222;
+}
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #fafafaaf;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+button {
+    padding: 14px 35px;
+    background: rgb(236, 108, 61);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(236, 108, 61);
+}
+
+/* MAP SIDE */
+.map {
+    flex: 1;
+    min-height: 550px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+
 /* Footer */
 .footer{
     background-color: #ffffff;
@@ -158,8 +265,16 @@ body{
     .image {
         margin-top: 30px;
     }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .map {
+        min-height: 350px;
+    }
 }
-
-
-
-/* Footer */
