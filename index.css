@@ -152,12 +152,14 @@ body{
 }
 
 .intro h1{
-    font-size: 28px;
-    color: #222;
+    font-size: 25px;
+    color: #2e2d2d;
+    margin-bottom: 25px;
 }
+
 .intro h2 {
     font-size: 28px;
-    color: rgb(236, 108, 61);
+    color: #2e2d2d;
     margin-bottom: 20px;
 }
 
@@ -165,7 +167,8 @@ body{
     width: 75%;
     margin: auto;
     line-height: 1.8;
-    color: #555;
+    color: #2e2d2d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .mission {
@@ -200,12 +203,13 @@ body{
 .text h3 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: rgb(236, 108, 61);
+    color: #2e2d2d;
 }
 
 .text p {
     line-height: 1.8;
-    color: #666;
+    color: #2e2d2d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
