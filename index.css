@@ -25,7 +25,14 @@ body{
     letter-spacing: 1px;
 }
 .logo{
-    flex: 1;
+    display:  flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
 }
 /* Navigation Links */
 .nav-links {
@@ -620,11 +627,16 @@ button:hover {
     }
 
     .logo{
-        flex: unset;
+        display: flex;
+        align-items: center;
+        gap: 30px;
     }
-    
+    .logo img{
+        width: 45px;
+        height: 45px;
+    }
     .logo a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .hamburger {
@@ -704,7 +716,6 @@ button:hover {
 }
 
 @media (max-width:425px){
-    /* home page */
     .description h1 {
         font-size: 27px;
     }
@@ -721,6 +732,9 @@ button:hover {
     }
     .footer-section {
         margin-bottom: 0px;
+    }
+    .footer a[href^="tel"] {
+    color: #222;
     }
 }
 /* Tablet */
