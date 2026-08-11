@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("active");
     })
 
+    //form number formating
+    const phoneInput = document.getElementById("phone");
+    phoneInput.addEventListener("input", function () {
+        this.value = this.value.replace(/\D/g, "");
+    });
+    
     // form field clearing
     window.onbeforeunload = () => {
         for(const form of document.getElementsByTagName('form')) {
